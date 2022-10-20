@@ -1,0 +1,11 @@
+# file: ~/.gitignore_global
+.DS_Store
+.idea
+proyect.iml
+ms-database/ms-database.iml
+target/
+.settings/
+ms-database/.classpath
+.project
+.classpath
+.factorypath
