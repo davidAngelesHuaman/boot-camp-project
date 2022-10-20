@@ -1,10 +1,10 @@
-package com.nttdata.bootcamp.msdatabase.application;
+package com.nttdata.bootcamp.mspersistence.application;
 
 import com.nttdata.bootcamp.ms.commons.base.domain.AccountDTO;
 import com.nttdata.bootcamp.ms.commons.base.domain.ClientDTO;
 import com.nttdata.bootcamp.ms.commons.base.domain.ClientType;
-import com.nttdata.bootcamp.msdatabase.infraestructure.ClientRepository;
-import com.nttdata.bootcamp.msdatabase.model.Client;
+import com.nttdata.bootcamp.mspersistence.infraestructure.ClientRepository;
+import com.nttdata.bootcamp.mspersistence.model.Client;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;

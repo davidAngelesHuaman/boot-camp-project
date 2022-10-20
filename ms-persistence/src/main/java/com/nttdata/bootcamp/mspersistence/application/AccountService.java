@@ -1,8 +1,6 @@
-package com.nttdata.bootcamp.msdatabase.application;
+package com.nttdata.bootcamp.mspersistence.application;
 
-import org.springframework.web.reactive.function.server.ServerResponse;
-
-import com.nttdata.bootcamp.ms.commons.base.domain.AccountDTO;  
+import com.nttdata.bootcamp.ms.commons.base.domain.AccountDTO;
 import reactor.core.publisher.Mono;
 
 public interface AccountService {

@@ -1,17 +1,14 @@
-package com.nttdata.bootcamp.msdatabase.application;
+package com.nttdata.bootcamp.mspersistence.application;
 
-import org.springframework.beans.factory.annotation.Autowired; 
-import org.springframework.http.MediaType;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.server.ServerResponse;
 
 import com.nttdata.bootcamp.ms.commons.base.domain.AccountDTO;
-import com.nttdata.bootcamp.ms.commons.base.domain.AccountGroup;
-import com.nttdata.bootcamp.msdatabase.infraestructure.AccountRepository;
-import com.nttdata.bootcamp.msdatabase.model.Account;
+import com.nttdata.bootcamp.mspersistence.infraestructure.AccountRepository;
+import com.nttdata.bootcamp.mspersistence.model.Account;
  
 import reactor.core.publisher.Mono;
-import static org.springframework.web.reactive.function.BodyInserters.fromObject;
 
 @Service
 public class AccountServiceImpl implements AccountService {

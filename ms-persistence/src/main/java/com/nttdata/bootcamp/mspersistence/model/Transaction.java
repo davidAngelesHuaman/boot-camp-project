@@ -1,4 +1,4 @@
-package com.nttdata.bootcamp.msdatabase.model;
+package com.nttdata.bootcamp.mspersistence.model;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -10,14 +10,14 @@ import java.math.BigDecimal;
 @Document
 @Getter
 @Setter
-public class Account {
+public class Transaction {
 
     @Id
     private String id;
+    private BigDecimal amount;
+    /** Deposito, Retiro, Pago **/
     private Integer type;
-    private BigDecimal commission;
-    private Integer movementCount;
-    private Integer accountGroup;
-    private Boolean status; 
-    
+
+
+
 }

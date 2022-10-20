@@ -1,4 +1,4 @@
-package com.nttdata.bootcamp.msdatabase.model;
+package com.nttdata.bootcamp.mspersistence.model;
  
 
 import org.springframework.data.annotation.Id;

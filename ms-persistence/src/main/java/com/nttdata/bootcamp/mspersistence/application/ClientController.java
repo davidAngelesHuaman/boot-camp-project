@@ -1,4 +1,4 @@
-package com.nttdata.bootcamp.msdatabase.application;
+package com.nttdata.bootcamp.mspersistence.application;
 
 import com.nttdata.bootcamp.ms.commons.base.domain.ClientDTO;
 import org.springframework.beans.factory.annotation.Autowired;
