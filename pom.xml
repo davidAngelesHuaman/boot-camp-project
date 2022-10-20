@@ -11,7 +11,7 @@
     <name>Project Multi-module - Bootcamp Micro Services</name>
 
     <modules>
-        <module>ms-database</module>
+        <module>ms-persistence</module>
         <module>ms-commons-base</module>
         <module>ms-client</module>
 		<module>ms-account</module>

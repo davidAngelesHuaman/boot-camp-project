@@ -2,10 +2,10 @@
 .DS_Store
 .idea
 proyect.iml
-ms-database/ms-database.iml
+ms-persistence/ms-persistence.iml
 target/
 .settings/
-ms-database/.classpath
+ms-persistence/.classpath
 .project
 .classpath
 .factorypath
