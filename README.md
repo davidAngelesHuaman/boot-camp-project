@@ -5,7 +5,7 @@ Proyecto multi module implementado para el boot camp MS
 
 ## Componentes
 
-- **ms-database** - Componente que mantiene la capa persistente a la base de datos MongoDB
+- **ms-persistence** - Componente que mantiene la capa persistente a la base de datos MongoDB
 - **ms-commons-base** - Objetos DTO
 - **ms-client**
 - **ms-account**
