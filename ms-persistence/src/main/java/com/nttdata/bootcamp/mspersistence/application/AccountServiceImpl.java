@@ -1,5 +1,6 @@
 package com.nttdata.bootcamp.mspersistence.application;
 
+import com.nttdata.bootcamp.ms.commons.base.domain.StatusType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.server.ServerResponse;
@@ -26,7 +27,7 @@ public class AccountServiceImpl implements AccountService {
 		account.setMovementCount(accountDTO.getMovementCount());
 		account.setAccountGroup(accountDTO.getAccountGroup());
 		account.setType(accountDTO.getType());
-		account.setStatus(accountDTO.getStatus());
+		account.setStatus(accountDTO.getStatus().getCode());
 		  
 		return Mono.just(account).flatMap(accountRepository::insert).map(p-> toDto(p));
 	}
@@ -36,7 +37,7 @@ public class AccountServiceImpl implements AccountService {
 		Mono<Account> account = accountRepository.findById(String.valueOf(id));
 		 
 		return account.flatMap(acc -> { 
-			acc.setStatus(false);
+			acc.setStatus(StatusType.INACTIVE.getCode());
 			return Mono.just(acc).flatMap(accountRepository::save).map(p-> toDto(p));
 		});
 	}	
@@ -59,7 +60,7 @@ public class AccountServiceImpl implements AccountService {
 				.movementCount(account.getMovementCount())
 				.accountGroup(account.getAccountGroup())
 				.type(account.getType()) 
-				.status(account.getStatus())
+				.status(StatusType.getFromCodeOrNull(account.getStatus()))
 				.build();
 	}
  

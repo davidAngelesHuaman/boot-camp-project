@@ -18,6 +18,6 @@ public class Account {
     private BigDecimal commission;
     private Integer movementCount;
     private Integer accountGroup;
-    private Boolean status; 
+    private Integer status;
     
 }
