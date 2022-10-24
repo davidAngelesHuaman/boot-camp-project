@@ -1,10 +1,10 @@
-package com.nttdata.bootcamp.ms.client.application;
+package com.nttdata.bootcamp.ms.transaction.application;
 
 import com.nttdata.bootcamp.ms.commons.base.domain.ClientDTO;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-public interface ClientService {
+public interface TransactionService {
 
     Mono<ClientDTO> create(ClientDTO clientDTO);
     Mono<ClientDTO> findById(String code);
